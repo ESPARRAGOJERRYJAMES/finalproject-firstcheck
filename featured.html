@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Civilizations - Featured</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    main {
+      padding: 100px 0 20px 0;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .featured-civilizations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .featured-civilization {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .featured-civilization img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .learn-more {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured-civilization-content {
+      margin-top: 20px;
+    }
+
+    .featured-civilization-content h3 {
+      margin-top: 10px;
+    }
+
+    .featured-civilization-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .featured-civilization-content img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .featured-civilization-content .primary-source,
+    .featured-civilization-content .expert-insights,
+    .featured-civilization-content .resources {
+      margin-top: 20px;
+    }
+
+    .search-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .search-container input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ancient Civilizations</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="civilizations.html">Civilizations</a></li>
+        <li><a href="featured.html">Featured</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Featured Civilizations</h2>
+      <p>Our selection of the most intriguing ancient civilizations.</p>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for civilizations...">
+      </div>
+
+      <div class="featured-civilizations">
+        <div class="featured-civilization" id="egypt" data-civilization="Egypt">
+          <img src="https://i.ibb.co/qYDZMT4D/44918290541-2e04d43a20-b.jpg" alt="Egypt" border="0">
+          <h3>Egypt</h3>
+          <p>Discover the wonders of ancient Egypt, from the pyramids to hieroglyphics.</p>
+          <a href="featuredegypt.html" class="learn-more">Learn More</a> <!-- Updated href -->
+        </div>
+        <div class="featured-civilization" id="greece" data-civilization="Greece">
+          <img src="https://i.ibb.co/xqwxKp0Q/1-2-Nt-HGn-Nlk42l-Xy-KWxo1w.webp" alt="Greece" border="0">
+          <h3>Greece</h3>
+          <p>Explore the birthplace of democracy, philosophy, and the arts.</p>
+          <a href="featuredgreece.html" class="learn-more">Learn More</a> <!-- Updated href -->
+        </div>
+        <div class="featured-civilization" id="rome" data-civilization="Rome">
+          <img src="https://i.ibb.co/qwZrWTb/Fall-of-the-Roman-Empire.jpg" alt="Rome" border="0">
+          <h3>Rome</h3>
+          <p>Explore the rise and fall of the Roman Empire.</p>
+          <a href="featuredrome.html" class="learn-more">Learn More</a> <!-- Updated href -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ancient Civilizations. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const civilizationItems = document.querySelectorAll('.featured-civilization');
+
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      civilizationItems.forEach(item => {
+        const civilization = item.dataset.civilization.toLowerCase();
+        if (civilization.includes(searchTerm)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
